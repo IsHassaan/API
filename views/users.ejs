@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css">
+    <title>Users</title>
+</head>
+<body>
+<%- include('navbar') %>
+
+<div class="users">
+    <h1>Liste des Utilisateurs</h1>
+    <ul>
+        <% users.forEach(function(user) { %>
+            <li><strong>Id :</strong><%= user.id %></li>
+            <li><strong>Email :</strong><%= user.email %></li>
+        <% }); %>
+    </ul>
+    <a href="/logout">Deconnexion</a>
+</div>
+
+</body>
+</html>

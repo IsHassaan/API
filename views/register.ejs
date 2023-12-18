@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css">
+    <title>Register</title>
+</head>
+<body>
+<%- include('navbar') %>
+<div class="loginForm">
+    <form action="/register" method="post">
+        <% if (typeof errorMessage !== 'undefined') { %>
+            <p class="error-message"><%= errorMessage %></p>
+        <% } %>
+        <label for="login">Email</label>
+        <input type="text" name="email" id="email" required minlength="10"></input>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" required minlength="8"></input>
+        <input type="submit" class="submit" value="S'inscrire"></input>
+        <a href="/login">Vous êtes déjà inscrit ? Cliquez ici !</a>
+    </form>
+</div>
+</body>
+</html>

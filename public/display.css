@@ -1,0 +1,126 @@
+*{
+padding: 0;
+margin: 0;
+}
+h1{
+font-size: 3vw;
+}
+h2{
+font-size: 2.5vw;
+}
+p,a,label, input{
+font-size: 1.7vw;
+}
+.error-message{
+    color: red;
+}
+.loginForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+    border: 0.2vw solid rgb(222, 222, 222);
+    border-radius: 0.5vw;
+    box-shadow: 0vw 0.5vw 1vw 0vw rgb(222, 222, 222);
+    margin-top: 10%;
+    padding: 2%;
+}
+.loginForm form input{
+    margin-top: 1%;
+    width: 40%;
+    border-radius: 0.5vw;
+    border: 2px solid rgb(222, 222, 222);
+    padding: 0.5%;
+}
+.loginForm form label{
+    margin-top: 4%;
+}
+.loginForm form .submit{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    color: white;
+    background-color: rgb(29, 111, 169);
+    width: 30%;
+}
+.submit:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    justify-content: space-evenly;
+    background-color: rgb(29, 111, 169);
+    padding: 1%;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+}
+.navbar a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: center;
+}
+.users ul{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.users li{
+    margin-top: 4%;
+    font-size: 1.7vw;
+    list-style: none;
+}
+.users a{
+    margin-top: 4%;
+    color: white;
+    background-color: rgb(29, 111, 169);
+    width: 30%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.2vw;
+    padding: 0.5%;
+}
+.users a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+    font-size: 5vw;
+    }
+    h2{
+    font-size: 4.5vw;
+    }
+    p,a,label,li, input{
+    font-size: 3vw;
+    }
+    .users{
+        margin-top: 20%;
+    }
+    .users ul, .users a{
+        margin-top: 10%;
+    }
+    .loginForm form{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50%;
+    }
+    .loginForm form input{
+        width: 70%;
+    }
+}
